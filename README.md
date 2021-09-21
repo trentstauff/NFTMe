@@ -6,6 +6,9 @@
 
 NFTMe is the result of a challenge that Shopify posed to it's Backend Developer applicants. <br/>
 Originally, the task asked the programmer to create an image repository. I decided to have some fun with the idea, and thats where NFTs come into play! </br>
+NFTs have been a super hot topic, and I've always wanted to code something surrounding the topic. <br/>
+NFTs (non-fungible tokens) are simply data on a blockchain, meaning they are all individual. <br/>
+So, you can think of NFTMe as a marketplace where users would go to buy/sell NFTs! <br/>
 
 NFTMe allows users to:
 - Authenticate with an account
