@@ -20,6 +20,10 @@ NFTMe allows users to:
 - And much more!
 
 ## Getting Setup
+Note: If you have any issues setting up NFTMe, please do not hesitate to reach out to me by phone or email! <br/>
+Phone: 519-277-3287 <br/>
+Email: tstauffe@uwaterloo.ca <br/>
+
 `git clone https://github.com/trentstauff/NFTMe.git`<br />
 `cd NFTMe` <br />
 `set FLASK_APP=run.py` (on windows) `export FLASK_APP=run.py` (on unix) <br />
