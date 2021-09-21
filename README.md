@@ -16,7 +16,7 @@ NFTMe allows users to:
 - Update NFTs to set their price, title, and selling status
 - And much more!
 
-### Getting Setup
+## Getting Setup
 `git clone https://github.com/trentstauff/NFTMe.git`<br />
 `cd NFTMe` <br />
 `set FLASK_APP=run.py` (on windows) `export FLASK_APP=run.py` (on unix) <br />
@@ -26,14 +26,14 @@ NFTMe allows users to:
 Then, you'll see a link where the application is running (should look like `http://127.0.0.1:5000/`). </br>
 Navigate to said link in the browser, and have fun!
 
-#### For Shopify Recruiters:
+### For Shopify Recruiters:
 **You can either register a new account, or you can log in to an existing one made for you:**
 
 **username:** recruiter@shopify.com </br>
 **password:** password
 
 
-### Testing
+## Testing
 Testing this flask application is extremely easy for any developers. Just navigate to the top level project folder and type:
 `pytest`
 To the console after installing the requirements above.
