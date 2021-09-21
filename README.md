@@ -2,7 +2,7 @@
 ![NFTME](https://user-images.githubusercontent.com/53923200/134110201-69fc0b4c-30f3-4e31-944c-40f743e76b04.png)
 ![NFTMe](https://user-images.githubusercontent.com/53923200/134114284-e227df12-0a4b-4652-8da1-52b51e9e45e9.gif)
 
-### What is NFTMe?
+## What is NFTMe?
 
 NFTMe is the result of a challenge that Shopify posed to it's Backend Developer applicants. <br/>
 Originally, the task asked the programmer to create an image repository. I decided to have some fun with the idea, and thats where NFTs come into play! </br>
