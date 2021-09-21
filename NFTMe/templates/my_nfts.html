@@ -1,7 +1,8 @@
 {% extends "layout.html" %}
 {% block content %}
 <div class="content-section">
-   <h2 class="account-heading">My NFT's</h2>
+   <h2 class="">My NFT's</h2>
+   <div style="display:flex; flex-direction: column; align-items: start; text-align: left">
    {% for nft in nfts %}
    <div style="text-align:left; float:left; display:flex; flex-direction: row;">
       <img style="margin: 20px; border:10px outset silver;" src="/static/nfts/{{nft.nft_image}}" alt=NFT" />
@@ -16,5 +17,6 @@
       </div>
    </div>
    {% endfor %}
+   </div>
 </div>
 {% endblock content %}
