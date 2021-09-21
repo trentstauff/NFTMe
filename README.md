@@ -23,13 +23,24 @@ NFTMe allows users to:
 `pip install -r requirements.txt` <br />
 `flask run` <br />
 
-Then, you'll see a link where the application is running (should look like `http://127.0.0.1:5000/`)
+Then, you'll see a link where the application is running (should look like `http://127.0.0.1:5000/`). </br>
+Navigate to said link in the browser, and have fun!
+
+#### For Shopify Recruiters:
+**You can either register a new account, or you can log in to an existing one made for you:
+
+username: recruiter@shopify.com
+password: password**
+
 
 ### Testing
-
 Testing this flask application is extremely easy for any developers. Just navigate to the top level project folder and type:
 `pytest`
 To the console after installing the requirements above.
+
+![image](https://user-images.githubusercontent.com/53923200/134114531-ccb315a2-f7d2-49fb-9dde-aee7912e60f2.png)
+![image](https://user-images.githubusercontent.com/53923200/134114555-b9351e42-ed3e-4611-abdd-91f57260da95.png)
+
 
 This application is tested both on it's models and it's routes.<br />
 Pytest gives the developer the option to test actions of the code that require user authentication!<br />
