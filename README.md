@@ -29,8 +29,8 @@ Navigate to said link in the browser, and have fun!
 #### For Shopify Recruiters:
 **You can either register a new account, or you can log in to an existing one made for you:**
 
-**username: recruiter@shopify.com**
-**password: password**
+**username:** recruiter@shopify.com </br>
+**password:** password
 
 
 ### Testing
