@@ -1,0 +1,52 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="content-section">
+   <div class="media">
+      <div style="text-align:left; float:left; display:flex; flex-direction: row;">
+         <img style="margin: 20px; border:10px outset silver;" src="/static/nfts/{{nft.nft_image}}" alt=NFT" />
+         <div style="padding: 20px">
+            <p style="font-size: 30px"><strong>Title:</strong> {{nft.title}}</p>
+         </div>
+      </div>
+   </div>
+   <form method="POST" action="" enctype="multipart/form-data">
+      {{ form.hidden_tag() }}
+      <fieldset class="form-group">
+         <legend class="border-bottom mb-4">Modify Your NFT</legend>
+         <div class="form-group">
+            {{ form.title.label(class="form-control-label") }}
+            {% if form.title.errors %}
+            {{ form.title(class="form-control form-control-lg is-invalid") }}
+            <div class="invalid-feedback">
+               {% for error in form.title.errors %}
+               <span>{{ error }}</span>
+               {% endfor %}
+            </div>
+            {% else %}
+            {{ form.title(class="form-control form-control-lg") }}
+            {% endif %}
+         </div>
+         <div class="form-check">
+            {{ form.status(class="form-check") }}
+            {{ form.status.label(class="form-check-label") }}
+         </div>
+         <div class="form-group" >
+            {{ form.price.label(class="form-control-label") }}
+            {% if form.price.errors %}
+            {{ form.price(class="form-control form-control-lg is-invalid") }}
+            <div class="invalid-feedback">
+               {% for error in form.price.errors %}
+               <span>{{ error }}</span>
+               {% endfor %}
+            </div>
+            {% else %}
+            {{ form.price(class="form-control form-control-lg") }}
+            {% endif %}
+         </div>
+      </fieldset>
+      <div class="form-group">
+         {{ form.submit(class="btn btn-outline-info") }}
+      </div>
+   </form>
+</div>
+{% endblock content %}

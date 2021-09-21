@@ -1,0 +1,34 @@
+{% extends "layout.html" %}
+{% block title %}
+Portfolio
+{% endblock %}
+{% block content %}
+<div class="content-section">
+   <strong>
+      <h1>NFT Marketplace</h1>
+   </strong>
+   <div style="display:flex; flex-direction: column; align-items: start; text-align: left">
+      {% for nft in nfts %}
+      <div style="text-align:left; float:left; display:flex; flex-direction: row;">
+         <img style="margin: 20px; border:10px outset silver;" src="/static/nfts/{{nft.nft_image}}" alt=NFT" />
+         <div style="padding: 20px">
+            <p style="font-size: 30px"><strong>Title:</strong> {{nft.title}}</p>
+            {% if nft.status == 1 %}
+            <p style="font-size: 20px"><strong>Price:</strong> ${{nft.price}}</p>
+            {% else %}
+            <p style="font-size: 20px"><i>This NFT is not for sale.</i></p>
+            {% endif %}
+            {% if nft.user_id == user.id %}
+            <button type="button" class="btn btn-info btn-sm"><a href="{{url_for('modify', nft_id=nft.id)}}" style="color: #ffffff; text-decoration: none;">Modify Your NFT</a></button>
+            {% else %}
+            <p><strong>Owned by:</strong> {{nft.username}}</p>
+            {% if nft.user_id != user.id and nft.status == 1  %}
+            <button type="button" class="btn btn-danger btn-sm"><a href="{{url_for('buy', nft_id=nft.id)}}" style="color: #ffffff; text-decoration: none;">Buy This NFT</a></button>
+            {% endif %}
+            {% endif %}
+         </div>
+      </div>
+      {% endfor %}
+   </div>
+</div>
+{% endblock %}

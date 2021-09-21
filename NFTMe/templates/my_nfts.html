@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="content-section">
+   <h2 class="account-heading">My NFT's</h2>
+   {% for nft in nfts %}
+   <div style="text-align:left; float:left; display:flex; flex-direction: row;">
+      <img style="margin: 20px; border:10px outset silver;" src="/static/nfts/{{nft.nft_image}}" alt=NFT" />
+      <div style="padding: 20px">
+         <p>Title: {{nft.title}}</p>
+         {% if nft.status == 1 %}
+         <p>Price: ${{nft.price}}</p>
+         {% else %}
+         <p>This NFT is not for sale.</p>
+         {% endif %}
+         <button type="button" class="btn btn-info btn-sm"><a href="{{url_for('modify', nft_id=nft.id)}}" style="color: #ffffff; text-decoration: none;">Modify Your NFT</a></button>
+      </div>
+   </div>
+   {% endfor %}
+</div>
+{% endblock content %}
